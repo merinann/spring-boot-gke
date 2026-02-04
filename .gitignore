@@ -1,0 +1,20 @@
+# Java/Maven
+target/
+*.jar
+*.war
+
+# Cloud Shell & Editor System Files (The "Large Files")
+.codeoss/
+.cache/
+.cloud-code/
+.config/
+.local/
+.npm/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
