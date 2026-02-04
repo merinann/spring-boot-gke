@@ -1,0 +1,19 @@
+steps:
+  # Step 1: Build the Docker image
+  # We use the Artifact Registry path we created in Step 1
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/spring-repo/spring-app:$COMMIT_SHA', '.']
+
+  # Step 2: Push the image to Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/spring-repo/spring-app:$COMMIT_SHA']
+
+  # Step 3: Deploy to GKE
+  # This tells GKE to use the new image we just pushed
+  - name: 'gcr.io/cloud-builders/gke-deploy'
+    args:
+      - 'run'
+      - '--filename=deployment.yaml'
+      - '--image=us-central1-docker.pkg.dev/$PROJECT_ID/spring-repo/spring-app:$COMMIT_SHA'
+      - '--location=us-central1-a'
+      - '--cluster=my-first-cluster'

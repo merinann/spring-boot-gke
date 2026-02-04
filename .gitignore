@@ -1,20 +1,16 @@
+# System Folders
+.docker/
+.gemini/
+.m2/
+.config/
+.cache/
+.local/
+bin/
+
 # Java/Maven
 target/
 *.jar
-*.war
 
-# Cloud Shell & Editor System Files (The "Large Files")
-.codeoss/
-.cache/
-.cloud-code/
-.config/
-.local/
-.npm/
-
-# IDEs
-.idea/
+# IDE
 .vscode/
-*.iml
-
-# OS
-.DS_Store
+.idea/

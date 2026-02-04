@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-boot-app
+  template:
+    metadata:
+      labels:
+        app: spring-boot-app
+    spec:
+      containers:
+      - name: spring-boot-app
+        # We use a placeholder PROJECT_ID; Cloud Build will swap this automatically
+        image: us-central1-docker.pkg.dev/PROJECT_ID/spring-repo/spring-app:latest
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: spring-boot-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080

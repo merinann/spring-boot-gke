@@ -1,0 +1,164 @@
+{
+  message: 'Starting Java server with: /usr/lib/jvm/java-21-openjdk-amd64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable -javaagent:/google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/lombok/lombok-1.18.39-4050.jar -jar /google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/server/plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar -configuration /home/merin_ann97/.codeoss/data/User/globalStorage/redhat.java/1.48.2025111408/config_ss_linux -data /home/merin_ann97/.codeoss/data/User/workspaceStorage/-6a1805e5/redhat.java/ss_ws',
+  level: 'info',
+  timestamp: '2026-02-04 11:43:44.357'
+}
+{
+  message: 'WARNING: Using incubator modules: jdk.incubator.vector\n',
+  level: 'info',
+  timestamp: '2026-02-04 11:43:44.792'
+}
+{
+  message: 'Starting Java server with: /usr/lib/jvm/java-21-openjdk-amd64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable -javaagent:/google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/lombok/lombok-1.18.39-4050.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/merin_ann97/.codeoss/data/User/workspaceStorage/-6a1805e5/redhat.java -Daether.dependencyCollector.impl=bf -XX:+UnlockDiagnosticVMOptions -XX:+AllowArchivingWithJavaAgent -XX:+AutoCreateSharedArchive -XX:SharedArchiveFile=/home/merin_ann97/.codeoss/data/User/globalStorage/redhat.java/1.48.2025111408/jdtls.jsa -jar /google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/server/plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar -configuration /home/merin_ann97/.codeoss/data/User/globalStorage/redhat.java/1.48.2025111408/config_linux -data /home/merin_ann97/.codeoss/data/User/workspaceStorage/-6a1805e5/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2026-02-04 11:43:44.847'
+}
+{
+  message: 'WARNING: Using incubator modules: jdk.incubator.vector\n',
+  level: 'info',
+  timestamp: '2026-02-04 11:43:45.058'
+}
+{
+  message: 'Feb 04, 2026 11:43:49 AM org.apache.aries.spifly.BaseActivator log\n' +
+    'INFO: Registered provider ch.qos.logback.classic.spi.LogbackServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle ch.qos.logback.classic\n',
+  level: 'info',
+  timestamp: '2026-02-04 11:43:49.547'
+}
+{
+  message: '[Error - 11:44:24 AM] Feb 4, 2026, 11:44:21 AM JavaBuilder handling CoreException while building: demo\n' +
+    'org.eclipse.core.runtime.CoreException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:90)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:372)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:82)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:692)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:211)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1109)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:299)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:355)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:449)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:452)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:564)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:512)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:594)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:208)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:309)\n' +
+    '\tat org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)\n' +
+    'Caused by: java.lang.IllegalArgumentException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)\n' +
+    '\t... 18 more\n',
+  level: 'info',
+  timestamp: '2026-02-04 11:44:24.544'
+}
+{
+  message: '[Error - 11:44:25 AM] Feb 4, 2026, 11:44:25 AM JavaBuilder handling CoreException while building: demo\n' +
+    'org.eclipse.core.runtime.CoreException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:90)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:372)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:82)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:692)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:211)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1109)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:299)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:355)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:449)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:452)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:564)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:512)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:594)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:208)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:309)\n' +
+    '\tat org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)\n' +
+    'Caused by: java.lang.IllegalArgumentException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)\n' +
+    '\t... 18 more\n',
+  level: 'info',
+  timestamp: '2026-02-04 11:44:25.339'
+}
+{
+  message: 'Starting Java server with: /usr/lib/jvm/java-21-openjdk-amd64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable -javaagent:/google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/lombok/lombok-1.18.39-4050.jar -jar /google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/server/plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar -configuration /home/merin_ann97/.codeoss/data/User/globalStorage/redhat.java/1.48.2025111408/config_ss_linux -data /home/merin_ann97/.codeoss/data/User/workspaceStorage/-6a1805e5/redhat.java/ss_ws',
+  level: 'info',
+  timestamp: '2026-02-04 12:35:09.589'
+}
+{
+  message: 'Starting Java server with: /usr/lib/jvm/java-21-openjdk-amd64/bin/java --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.fs=ALL-UNNAMED -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Djava.import.generatesMetadataFilesAtProjectRoot=false -DDetectVMInstallationsJob.disabled=true -Dfile.encoding=utf8 -XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable -javaagent:/google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/lombok/lombok-1.18.39-4050.jar -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/merin_ann97/.codeoss/data/User/workspaceStorage/-6a1805e5/redhat.java -Daether.dependencyCollector.impl=bf -XX:+UnlockDiagnosticVMOptions -XX:+AllowArchivingWithJavaAgent -XX:+AutoCreateSharedArchive -XX:SharedArchiveFile=/home/merin_ann97/.codeoss/data/User/globalStorage/redhat.java/1.48.2025111408/jdtls.jsa -jar /google/devshell/editor/code-oss-for-cloud-shell/extensions/redhat.java/server/plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar -configuration /home/merin_ann97/.codeoss/data/User/globalStorage/redhat.java/1.48.2025111408/config_linux -data /home/merin_ann97/.codeoss/data/User/workspaceStorage/-6a1805e5/redhat.java/jdt_ws',
+  level: 'info',
+  timestamp: '2026-02-04 12:35:10.115'
+}
+{
+  message: 'WARNING: Using incubator modules: jdk.incubator.vector\n',
+  level: 'info',
+  timestamp: '2026-02-04 12:35:10.126'
+}
+{
+  message: 'WARNING: Using incubator modules: jdk.incubator.vector\n',
+  level: 'info',
+  timestamp: '2026-02-04 12:35:13.480'
+}
+{
+  message: 'Feb 04, 2026 12:35:15 PM org.apache.aries.spifly.BaseActivator log\n' +
+    'INFO: Registered provider ch.qos.logback.classic.spi.LogbackServiceProvider of service org.slf4j.spi.SLF4JServiceProvider in bundle ch.qos.logback.classic\n',
+  level: 'info',
+  timestamp: '2026-02-04 12:35:15.867'
+}
+{
+  message: '[Error - 12:35:35 PM] Feb 4, 2026, 12:35:34 PM JavaBuilder handling CoreException while building: demo\n' +
+    'org.eclipse.core.runtime.CoreException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:90)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:372)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:82)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:692)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:211)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1109)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:299)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:355)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:449)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:452)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:564)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:512)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:594)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:208)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:309)\n' +
+    '\tat org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)\n' +
+    'Caused by: java.lang.IllegalArgumentException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)\n' +
+    '\t... 18 more\n',
+  level: 'info',
+  timestamp: '2026-02-04 12:35:35.853'
+}
+{
+  message: '[Error - 12:40:34 PM] Feb 4, 2026, 12:40:34 PM JavaBuilder handling CoreException while building: demo\n' +
+    'org.eclipse.core.runtime.CoreException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:90)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathLocation.forJrtSystem(ClasspathLocation.java:175)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:372)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:82)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:692)\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:211)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1109)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:299)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:355)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:449)\n' +
+    '\tat org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:452)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:564)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:512)\n' +
+    '\tat org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:594)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:208)\n' +
+    '\tat org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:309)\n' +
+    '\tat org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)\n' +
+    'Caused by: java.lang.IllegalArgumentException: release 22 is not found in the system\n' +
+    '\tat org.eclipse.jdt.internal.core.builder.ClasspathJrtWithReleaseOption.<init>(ClasspathJrtWithReleaseOption.java:89)\n' +
+    '\t... 18 more\n',
+  level: 'info',
+  timestamp: '2026-02-04 12:40:34.120'
+}
